@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/css-reset.css" />
+    <link rel="stylesheet" href="./swiper-5.3.6/package/css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+    />
+    <link rel="stylesheet" href="./css/animation.css" />
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="header-one">
+        <div class="logo">
+          <a href="#"><img src="./img/GAVELthegame.png" alt=""/></a>
+        </div>
+        <div class="box">
+          <form class="search-box">
+            <input type="text" name="" placeholder="جست و جو کنید" />
+            <button class="btn-search">
+              <img src="./img/search-icon.png" />
+            </button>
+          </form>
+        </div>
+
+        <div class="login">
+          <a
+            href="#"
+            style="text-decoration: none;"
+            class="register-btn none-text--decoration login-hover"
+          >
+            <span class="login-hover--advanced"></span>
+            <span class="login-hover--advanced"></span>
+            <span class="login-hover--advanced"></span>
+            <span class="login-hover--advanced"></span>ثبت نام
+          </a>
+          <a
+            href="#"
+            class="none-text--decoration  login-hover login-btn "
+            style="margin-right: 10px;"
+          >
+            <span class="login-hover--advanced"></span>
+            <span class="login-hover--advanced"></span>
+            <span class="login-hover--advanced"></span>
+            <span class="login-hover--advanced"></span>
+            ورود</a
+          >
+        </div>
+      </div>
+
+      <div class="header-two">
+        <div class="list">
+          <ul class="set-display">
+            <a href="#"><li class="list-style">پلی استیشن</li></a>
+            <a href="#"><li class="list-style">ایکس باکس</li></a>
+            <a href="#"><li class="list-style">کارکرده ها</li></a>
+            <a href="#"><li class="list-style">فروش ویژه</li></a>
+            <a href="#"><li class="list-style">مقالات</li></a>
+            <a href="#"><li class="list-style">درباره ما</li></a>
+          </ul>
+        </div>
+
+        <div class="store list-style">
+          <a
+            style="color: white;"
+            href=""
+            class="none-text--decoration hover-store"
+            ><i></i>فروشگاه</a
+          >
+        </div>
+      </div>
+
+      <!--slider -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/slider1.jpg" /></div>
+          <div class="swiper-slide"><img src="./img/slider2.jpg" /></div>
+          <div class="swiper-slide"><img src="./img/slider3.jpg" /></div>
+          <div class="swiper-slide"><img src="./img/slider4.jpg" /></div>
+          <div class="swiper-slide"><img src="./img/slider5.jpg" /></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script> -->
+    <script src="./swiper-5.3.6/package/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        mousewheel: true,
+        keyboard: true
+      });
+    </script>
+  </body>
+</html>
