@@ -29,11 +29,7 @@
       <div class="box">
         <form class="search-box">
           <input type="text" name="" placeholder="جست و جو کنید" />
-<<<<<<< HEAD
           <button class="btn-search" style="outline: none;">
-=======
-          <button class="btn-search">
->>>>>>> 10084688e28c7db871b5e4e47906ace6621d7efb
             <img src="./img/search-icon.png" />
           </button>
         </form>
@@ -218,7 +214,7 @@
 
 
     <section class="body-carousel" style="margin: 70px 0px; direction: ltr;">
-      <div class="images glide body-carousel  shadow-card">
+      <div class="images-2 glide body-carousel  shadow-card">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides" style="overflow: hidden;">
             <li class="glide__slide ">
@@ -300,7 +296,7 @@
 
 
     <section class="body-carousel" style="margin: 70px 0px; direction: ltr;">
-      <div class="images glide body-carousel  shadow-card">
+      <div class="images-3 glide body-carousel  shadow-card">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides" style="overflow: hidden;">
             <li class="glide__slide ">
@@ -364,24 +360,21 @@
             </li>
           </ul>
         </div>
-
-
-
-
         <div class="glide__arrows" data-glide-el="controls">
           <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
               class="fas fa-arrow-right"></i></button>
         </div>
       </div>
-
-
-
-
     </section>
 
 
 
+    <footer class="footer-all">
+      <div></div>
+      <div></div>
+
+    </footer>
 
 
 
@@ -389,16 +382,42 @@
 
 
 
-    <script src="./js/bootstrap.min.js"></script>
+  </div>
 
 
-    <script>
-      new Glide(".images", {
-        type: 'carousel',
-        perView: 4,
 
-      }).mount();
-    </script>
+
+
+
+  <script src="./js/bootstrap.min.js"></script>
+
+
+  <script>
+    new Glide(".images", {
+      type: 'carousel',
+      perView: 4,
+
+    }).mount();
+
+  </script>
+  <script>
+    new Glide(".images-2", {
+      type: 'carousel',
+      perView: 4,
+
+    }).mount();
+
+  </script>
+
+  <script>
+    new Glide(".images-3", {
+      type: 'carousel',
+      perView: 4,
+
+    }).mount();
+
+  </script>
+
 </body>
 
 </html>
