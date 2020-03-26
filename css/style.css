@@ -1,18 +1,30 @@
-html,
+/* html,
 body {
-  direction: rtl;
+  background-color: #ecf0f1;
+  direction: rtl !important;
   font-family: sans-serif;
   text-decoration: none !important;
   position: relative;
   height: 100%;
+  overflow-x: hidden; 
 }
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
+} */
+body{
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+  direction: rtl !important;
+  position: relative;
+  overflow-x: hidden; 
+
+
+
 }
 .none-text--decoration {
   text-decoration: none !important;
@@ -51,7 +63,7 @@ input {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  transition: 2.5s;
+  transition: 1.5s;
   box-sizing: border-box;
 }
 input[type="text"] {
@@ -109,6 +121,10 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  position: sticky;
+  opacity: .9;
+  z-index: 9999;
+  top: 0;
 }
 
 .list {
@@ -140,28 +156,124 @@ input[type="text"] {
 }
 
 /* slider */
-.swiper-container {
-  width: 1000px;
-  /* height: 100%; */
-  height: 500px;
-  overflow: hidden;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #ffff;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+
+.carousel-item
+{
+  height: 50vh;
+}
+.carousel-indicators
+{
+  bottom: 1 !important;
+}
+.carousel-item
+{
+  height: 70vh;
+} 
+
+#carouselExampleIndicators{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+}
+.summary-all--page
+{
+  margin-top: 30px;
+  height: 782px;
+  display: flex;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 6px;
+  background:linear-gradient(transparent,#1dd1a1);
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background:linear-gradient(transparent,#82589F);
+
+}
+.summary-coulmn
+{
+  display: flex;
+  flex-direction: column;
+  
+}
+.summary-coulmn2
+{
+  display: flex;
+  flex-direction: column;
+}
+.shadow
+{
+  box-shadow: 0 30px 38px rgba(0,0,0,0.50)
+}
+.two-carousel
+{
+  height: 480px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+/* Slick carousel */
+/* .glide__slide img{
+  width: 100%;
+} */
+
+.glide__slides{
+  overflow: visible;
+}
+.glide__track
+{
+  margin-top: 130px;
+}
+
+/* .glide__slides .glide__slide
+{
+  width: 200px;
+  height: 200px;
+} */
+.body-carousel
+{
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.glide__slide
+{
+  width: 371px;
+  height: 400px;
+}
+.card-img-top
+{
+  width:100%; 
+  height: 200px;
+}
+.card-body
+{
+  text-align: right;
+}
+.card-text
+{
+  margin-bottom: 1.5rem;
+}
+.btn-price
+{
+  padding: 15px;
+  background-color: violet;
+  border: none;
+  border-radius: 5px ;
+  text-align: center !important;
+}
+.shadow-card
+{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
