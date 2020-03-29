@@ -23,7 +23,7 @@
 <body>
   <div class="full-page">
     <div class="header-one">
-      <div class="logo">
+      <div class="logo-header">
         <a href="#"><img src="./img/GAVELthegame.png" alt="" /></a>
       </div>
       <div class="box">
@@ -54,29 +54,18 @@
     <div class="header-two">
       <div class="list">
         <ul class="set-display">
-          <a href="#">
-            <li class="list-style">پلی استیشن</li>
-          </a>
-          <a href="#">
-            <li class="list-style">ایکس باکس</li>
-          </a>
-          <a href="#">
-            <li class="list-style">کارکرده ها</li>
-          </a>
-          <a href="#">
-            <li class="list-style">فروش ویژه</li>
-          </a>
-          <a href="#">
-            <li class="list-style">مقالات</li>
-          </a>
-          <a href="#">
-            <li class="list-style">درباره ما</li>
-          </a>
+          <li class=" list-style"><a href="#">پلی استیشن</a></li>
+          <li class=" list-style"><a href="#">ایکس باکس</a></li>
+          <li class=" list-style"><a href="#">کارکرده ها</a></li>
+          <li class=" list-style"><a href="#">فروش ویژه</a></li>
+          <li class=" list-style"><a href="#">مقالات</a></li>
+          <li class=" list-style"><a href="#">درباره ما</a></li>
+          <li class="toggle"><a href="#"><span class="bars"></span></a></li>
         </ul>
       </div>
 
       <div class="store list-style">
-        <a style="color: white;" href="" class="none-text--decoration hover-store"><i></i>فروشگاه</a>
+        <a style="color: white;" href="" class="none-text--deco"><i></i>فروشگاه</a>
       </div>
     </div>
 
@@ -371,8 +360,72 @@
 
 
     <footer class="footer-all">
-      <div></div>
-      <div></div>
+      <div class="col-md-4 " style="display: flex;">
+
+        <div class="about-me">
+          <h4>درباره ما</h4>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرهالخصوص
+            طراحان خلاقی،
+            و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+            راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+        </div>
+        <div class="col-md-4  footer-part1">
+
+          <a href=""><img style="width: 150px;
+          height: 150px;" src="./img/namad2.png " alt=""></a>
+          <a href=""><img style=" width: 150px;
+          height: 150px;; " src="./img/namad2.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 footer-part2">
+        <h1 style="font-size:22px; padding-left: 70px;">ما در شبکه های اجتماعی</h1>
+
+        <div class="dim">
+          <div class="container">
+            <div class="connect">
+              <label for="open">
+                <div class="button fontawesome-eye-open">
+                  <p style="font-size: 18px;">کلیک کنید</p>
+                </div>
+              </label>
+              <input id='open' type="checkbox">
+              <div class="social social1 fontawesome-twitter" data-info='fontawesome-twitter'
+                data-link='https://twitter.com/pixel_grid'><i class="fab fa-twitter"></i></div>
+              <div class="social social2 fontawesome-facebook" data-info='fontawesome-facebook'
+                data-link='www.facebook.com/username'><i class="fab fa-facebook-f"></i></div>
+              <div class="social social3 fontawesome-github" data-info='fontawesome-github'
+                data-link='www.github.com/username'><i class="fab fa-telegram"></i></div>
+              <div class="social social4 fontawesome-linkedin" data-info='fontawesome-linkedin'
+                data-link='www.linkedin.com/username'><i class="fab fa-instagram"></i></div>
+            </div>
+            <div class="backface ">
+              <div class="close fontawesome-remove-sign"></div>
+              <div class="logo"></div>
+              <div class="contact"><a href="" class="link"></a></div>
+            </div>
+
+          </div>
+        </div>
+        <di class="copyright">
+          <p>© 2020 فروشگاه اینترنتی گاول تمامی حقوق محفوظ است و استفاده از مطالب وب‌سایت برای اهداف تجاری پیگرد قانونی
+            دارد.</p>
+        </di>
+      </div>
+      <div class="col-md-4 footer-part3">
+        <h1>آخرین نوشته ها</h1>
+        <ul>
+          <li><a href="#">بازی ایکس باکس</a></li>
+          <li><a href="#">بازی پلی استیشن </a></li>
+          <li><a href="#"> بازی موبایل</a></li>
+          <li><a href="#">بازی ps4</a></li>
+          <li><a href="#"> بازی های رایگان</a></li>
+        </ul>
+        <div class="logo-footer">
+          <a href="#"><img src="./img/GAVELthegame.png" alt="" /></a>
+        </div>
+      </div>
 
     </footer>
 
@@ -416,6 +469,45 @@
 
     }).mount();
 
+  </script>
+  <script>
+    $(function () {
+      var social = '';
+      $('.social').click(function () {
+
+        if (social) $('.logo').removeClass(social);
+
+        social = $(this).data('info');
+        $('.logo').addClass($(this).data('info'));
+        $('.link').text($(this).data('link')).attr('href', $(this).data('link'));
+        $('.container').css('transform', 'rotateY(-180deg)');
+
+
+      });
+
+      $('.close').click(function () {
+
+        $('.container').css('transform', 'rotateY(-360deg)');
+
+      });
+
+    })
+
+  </script>
+  <script>
+    $(function () {
+
+      $(".toggle").on("click", function () {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        }
+        else {
+          $(".item").addClass("active");
+        }
+
+
+      })
+    });
   </script>
 
 </body>
