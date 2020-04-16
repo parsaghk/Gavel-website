@@ -17,7 +17,7 @@ html[dir="rtl"] {
 
 
 ::-webkit-scrollbar{
-  width: 12px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-thumb
@@ -31,6 +31,20 @@ html[dir="rtl"] {
   background:linear-gradient(transparent,#82589F);
 
 }
+/* .nav-item--1:focus
+{
+  background: linear-gradient(70deg, rgba(2,0,36,1) 0%, rgba(33,30,71,1) 16%, rgba(86,64,196,1) 54%, rgba(31,30,143,1) 100%);
+
+} */
+/* #m1
+{
+  position: absolute;
+  left: 9999px;
+}
+.focus-item--me:checked + label
+{
+  background: linear-gradient(70deg, rgba(2,0,36,1) 0%, rgba(23,29,41,1) 16%, rgba(35,34,108,1) 54%, rgba(30,124,143,1) 100%);
+} */
 html[dir="rtl"] .nav {
   padding-right: 0;
 }
