@@ -107,13 +107,18 @@
   
           Tip 2: you can also add an image using data-image tag
       -->
-            <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            <div class=" logo wow slideInDown" data-wow-duration="2s" data-wow-delay="1s">
+                <a href="./dashboard.html" class="simple-text logo-normal">
                     سایت گاول
                 </a>
+                <div class="logo-image" style="margin-top: 20px;">
+                    <img src="../assets/img/logo-image.webp" alt="" width="30%" height="30%"
+                        style="border: 3px solid white; border-radius: 45px; position: relative;right: 20px;">
+                    <p style="color: black;font-size: 17px;padding-left: 20px;">خوش آمدید<br><br>محسن اکبری</p>
+                </div>
             </div>
             <div class="sidebar-wrapper">
-                <ul class="nav">
+                <ul class="wow slideInLeft nav" data-wow-duration="2s" data-wow-delay="1s">
                     <li class="nav-item ">
                         <a class="nav-link" href="./dashboard.html">
                             <i class="material-icons">dashboard</i>
@@ -152,7 +157,7 @@
                         </a>
                     </li>
 
-                    <li class="nav-item ">
+                    <li class="nav-item " onclick="sweetAlert()">
                         <a class="nav-link" href="#" style="display: flex; align-items: center;">
                             <img src="../assets/img/close-icon.png" alt="" width="25px" height="25px">
                             <p style="padding-right: 15px;">خروج از حساب</p>
@@ -164,7 +169,8 @@
         </div>
         <div class="main-panel">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top wow slideInRight"
+                data-wow-delay="1s" data-wow-duration="2s">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
                         <a class="navbar-brand" href="#pablo">داشبورد فروشنده</a>
@@ -232,44 +238,21 @@
                 <div class="container-fluid">
                     <div class="row" style="display: flex; justify-content: center;">
                         <div class="col-md-8">
-                            <div class="card">
+                            <div class="card wow zoomIn" data-wow-duration="2s" data-wow-delay="1s">
 
 
-                                <div class="card-header card-header-primary" style="text-align: right;text-align: right;
-                                position: relative;
-                                bottom: 47px;">
+                                <div class="card-header card-header-primary"
+                                    style="text-align: right;text-align: right;">
                                     <h4 class="card-title"> اضافه کردن بازی </h4>
 
                                 </div>
                                 <div class="card card-nav-tabs card-plain">
-                                    <div class="card-header" style="background-color: #dbdad5;">
-                                        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                                        <div class="nav-tabs-navigation">
-                                            <div class="nav-tabs-wrapper">
-                                                <ul id="animate-ul" class="animated slideInLeft	 nav nav-tabs"
-                                                    data-tabs="tabs" style="display: flex; justify-content: center;">
-                                                    <li class="nav-item nav-item--1">
-                                                        <a class="nav-link active " href="#Akband" data-toggle="tab"
-                                                            aria-selected="true">آکبند</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#NotAkband" data-toggle="tab">غیر
-                                                            آکبند</a>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="card-body ">
                                         <div class="tab-content text-center">
                                             <div class="tab-pane active" id="Akband">
                                                 <form>
                                                     <div class="form-row">
-                                                        <div class="col-md-12">
-                                                            <input class="form-control active" placeholder="آکبند"
-                                                                readonly style="padding: 5px 10px;">
-                                                        </div>
+
                                                         <div class="form-row col-md-12" style="margin-top: 20px;">
                                                             <div class="col-md-12">
                                                                 <h5 style="text-align: right;">نوع کنسول خود را انتخاب
@@ -303,6 +286,56 @@
                                                                 <input type="radio" name="m1" class="select-region"
                                                                     id="m7">
                                                                 <label for="m7">All</label>
+                                                            </div>
+                                                            <div class="form-row col-md-12" style="margin-top: 20px;">
+                                                                <div class="col-md-12">
+                                                                    <h5 style="text-align: right;">سلامت کالا</h5>
+                                                                    <input type="radio" name="mk" class="select-region"
+                                                                        id="m411">
+                                                                    <label for="m411" class="acband">آکبند</label>
+                                                                    <input type="radio" name="mk" class="select-region"
+                                                                        id="m511">
+                                                                    <label for="m511"
+                                                                        class="not-acband">غیرآکبند</label>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class=" col-md-12" id="NotAkband"
+                                                                style="display: none;">
+                                                                <form class="show-more">
+
+                                                                    <div class="col-md-12"
+                                                                        style=" direction: ltr; display: flex; margin-top: 20px; ">
+                                                                        <div class="col-md-8">
+                                                                            <input type="range" min="0" max="100"
+                                                                                step="25" name="range">
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <h4 style="position: relative; left: 75px;">
+                                                                                :وضعیت
+                                                                                بلوری
+                                                                            </h4>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-12"
+                                                                        style=" direction: ltr; display: flex; margin-top: 20px; ">
+                                                                        <div class="col-md-8">
+                                                                            <input type="range" min="0" max="100"
+                                                                                step="25">
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <h4 style="position: relative; left: 75px;">
+                                                                                وضعیت کاور
+                                                                            </h4>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
                                                             </div>
 
                                                         </div>
@@ -348,119 +381,8 @@
 
                                                 </form>
                                             </div>
-                                            <div class="tab-pane" id="NotAkband">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="col-md-12">
-                                                            <input class="form-control" placeholder="غیر آکبند" readonly
-                                                                style="padding: 5px 10px;">
-                                                        </div>
-                                                        <div class="form-row col-md-12" style="margin-top: 20px;">
-                                                            <div class="col-md-12">
-                                                                <h5 style="text-align: right;">نوع کنسول خود را انتخاب
-                                                                    کنید</h5>
-                                                                <input type="radio" name="mmm" class="select-console"
-                                                                    id="t1">
-                                                                <label for="t1">ps4</label>
-                                                                <input type="radio" name="mmm" class="select-console"
-                                                                    id="t2">
-                                                                <label for="t2">xbox</label>
-                                                                <input type="radio" name="mmm" class="select-console"
-                                                                    id="t3">
-                                                                <label for="t3">nintendo switch</label>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="form-row col-md-12" style="margin-top: 20px;">
-                                                            <div class="col-md-12">
-                                                                <h5 style="text-align: right;">رجین(region) بازی خود را
-                                                                    انتخاب
-                                                                    کنید</h5>
-                                                                <input type="radio" name="m1" class="select-region"
-                                                                    id="m44">
-                                                                <label for="m44">1</label>
-                                                                <input type="radio" name="m1" class="select-region"
-                                                                    id="m55">
-                                                                <label for="m55">2</label>
-                                                                <input type="radio" name="m1" class="select-region"
-                                                                    id="m66">
-                                                                <label for="m66">3</label>
-                                                                <input type="radio" name="m1" class="select-region"
-                                                                    id="m77">
-                                                                <label for="m77">All</label>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-md-12"
-                                                        style=" direction: ltr; display: flex; margin-top: 20px; ">
-                                                        <div class="col-md-8">
-                                                            <input type="range" min="0" max="100" step="25">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <h4 style="position: relative; left: 75px;">:وضعیت
-                                                                بلوری
-                                                            </h4>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="col-md-12"
-                                                        style=" direction: ltr; display: flex; margin-top: 20px; ">
-                                                        <div class="col-md-8">
-                                                            <input type="range" min="0" max="100" step="25">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <h4 style="position: relative; left: 75px;">وضعیت کاور
-                                                            </h4>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-md-12" style="margin-top: 20px;">
-                                                        <label for="validationTextarea"
-                                                            style="width: 100%; text-align: right; color: black;">وسایل
-                                                            جانبی</label>
-                                                        <textarea class="form-control is-invalid"
-                                                            id="validationTextarea"
-                                                            placeholder="لیستی از وسایل جانبی بازی را اضافه کنید."
-                                                            required></textarea>
-                                                    </div>
 
 
-                                                    <div class="fileinput fileinput-new text-center"
-                                                        data-provides="fileinput"
-                                                        style=" margin-top: 40px; width: 100%;">
-                                                        <div class="fileinput-new thumbnail img-raised" style="    border: 1px solid gray;
-                                                            border-radius: 10px;">
-                                                            <img src="http://style.anu.edu.au/_anu/4/images/placeholders/person_8x10.png"
-                                                                rel="nofollow" alt="..." style="width: 20%;">
-                                                        </div>
-                                                        <div
-                                                            class="fileinput-preview fileinput-exists thumbnail img-raised">
-                                                        </div>
-                                                        <div>
-                                                            <span class="btn btn-raised btn-round btn-default btn-file">
-                                                                <span class="fileinput-new">انتخاب عکس</span>
-                                                                <input type="file" name="..." / value="انتخاب عکس">
-                                                            </span>
-                                                            <a href="#pablo"
-                                                                class="btn btn-danger btn-round fileinput-exists"
-                                                                data-dismiss="fileinput"><i class="fa fa-times"></i>
-                                                                حذف</a>
-                                                        </div>
-                                                        <button type="button" class="btn btn-success col-md-12"
-                                                            style="width: 100%; display: flex;justify-content: center;">ارسال</button>
-
-                                                    </div>
-
-
-
-
-
-
-                                            </div>
-                                            </form>
                                         </div>
 
                                     </div>
@@ -521,93 +443,7 @@
                 </script>
                 <!-- Sharrre libray -->
                 <script src="../assets/demo/jquery.sharrre.js"></script>
-                <script>
-                    $(document).ready(function () {
 
-                        $('#facebook').sharrre({
-                            share: {
-                                facebook: true
-                            },
-                            enableHover: false,
-                            enableTracking: false,
-                            enableCounter: false,
-                            click: function (api, options) {
-                                api.simulateClick();
-                                api.openPopup('facebook');
-                            },
-                            template: '<i class="fab fa-facebook-f"></i> Facebook',
-                            url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
-                        });
-
-                        $('#google').sharrre({
-                            share: {
-                                googlePlus: true
-                            },
-                            enableCounter: false,
-                            enableHover: false,
-                            enableTracking: true,
-                            click: function (api, options) {
-                                api.simulateClick();
-                                api.openPopup('googlePlus');
-                            },
-                            template: '<i class="fab fa-google-plus"></i> Google',
-                            url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
-                        });
-
-                        $('#twitter').sharrre({
-                            share: {
-                                twitter: true
-                            },
-                            enableHover: false,
-                            enableTracking: false,
-                            enableCounter: false,
-                            buttons: {
-                                twitter: {
-                                    via: 'CreativeTim'
-                                }
-                            },
-                            click: function (api, options) {
-                                api.simulateClick();
-                                api.openPopup('twitter');
-                            },
-                            template: '<i class="fab fa-twitter"></i> Twitter',
-                            url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
-                        });
-
-                        // Facebook Pixel Code Don't Delete
-                        ! function (f, b, e, v, n, t, s) {
-                            if (f.fbq) return;
-                            n = f.fbq = function () {
-                                n.callMethod ?
-                                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                            };
-                            if (!f._fbq) f._fbq = n;
-                            n.push = n;
-                            n.loaded = !0;
-                            n.version = '2.0';
-                            n.queue = [];
-                            t = b.createElement(e);
-                            t.async = !0;
-                            t.src = v;
-                            s = b.getElementsByTagName(e)[0];
-                            s.parentNode.insertBefore(t, s)
-                        }(window,
-                            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-
-                        try {
-                            fbq('init', '111649226022273');
-                            fbq('track', "PageView");
-
-                        } catch (err) {
-                            console.log('Facebook Track Error:', err);
-                        }
-
-                    });
-                </script>
-                <noscript>
-                    <img height="1" width="1" style="display:none"
-                        src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
-                </noscript>
                 <script>
                     $(document).ready(function () {
                         $().ready(function () {
@@ -764,47 +600,32 @@
                 </script>
 
                 <script src="../assets/js/rangeslider.min.js"></script>
+
+                <script src="../assets/js/range.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
                 <script>
-                    // var $element = $('input[type="range"]');
+                    new WOW().init();
+                </script>
 
-                    // $element
-                    //     .rangeslider({
-                    //         polyfill: false,
-                    //         onInit: function () {
-                    //             var $handle = $('.rangeslider__handle', this.$range);
-                    //             updateHandle($handle[0], this.value);
-                    //         }
-                    //     })
-                    //     .on('input', function (e) {
-                    //         var $handle = $('.rangeslider__handle', e.target.nextSibling);
-                    //         updateHandle($handle[0], this.value);
-                    //     });
 
-                    // function updateHandle(el, val) {
-                    //     el.textContent = val;
-                    // }
-                    var $r = $('input[type="range"]');
-                    var $ruler = $('<div class="rangeslider__ruler" />');
-
-                    // Initialize
-                    $r.rangeslider({
-                        polyfill: false,
-                        onInit: function () {
-                            $ruler[0].innerHTML = getRulerRange(this.min, this.max, this.step);
-                            this.$range.prepend($ruler);
-                        }
-                    });
-
-                    function getRulerRange(min, max, step) {
-                        var range = '';
-                        var i = 0;
-
-                        while (i <= max) {
-                            range += i + ' ';
-                            i = i + step;
-                        }
-                        return range;
+                <script>
+                    function sweetAlert() {
+                        swal("آیا قصد خروج از حساب را دارید؟");
                     }
+
+                </script>
+
+
+                <script>
+                    $(document).ready(function () {
+                        $('.not-acband').on('click', function () {
+                            $('#NotAkband').show();
+                            $('.acband').on('click', function () {
+                                $('#NotAkband').hide();
+                            });
+                        });
+                    });
                 </script>
 
 

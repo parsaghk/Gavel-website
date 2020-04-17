@@ -131,8 +131,9 @@ input[type='range'] {
   font-size: 1em;
   margin: 20px 3px 0 3px;
   position: relative;
+  top: 141%;
   text-align: justify;
-  top:30px;
+  padding: 0px 16px;
 }
 
 .rangeslider__ruler:after {
@@ -140,6 +141,9 @@ input[type='range'] {
   display: inline-block;
   width: 100%;
 }
+
+
+
 
 
 
@@ -19870,19 +19874,7 @@ Copyright (c) 2015 Daniel Eden
 
 
 
-.rangeslider,
-input[type='range'] {
-  max-width: 400px;
-}
 
-.rangeslider__handle {
-  border-radius: 22px;
-  min-width: 62px;
-  line-height: 42px;
-  text-align: center;
-  
- 
-}
 
 @media (min-width: 992px) {
   .main-panel .navbar .navbar-collapse .navbar-nav .nav-item .nav-link p {
