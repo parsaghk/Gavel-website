@@ -50,6 +50,8 @@ html {
 }
 
 
+
+/* start input radio box in add-game.html */
 .select-console
 {
   position: absolute;
@@ -121,6 +123,12 @@ html {
 	background: linear-gradient(70deg, rgba(66,41,180,1) 0%, rgba(71,111,25,0.9) 16%, rgba(86,64,196,0.9) 54%, rgba(31,30,143,1) 100%);
   box-shadow: -33px 25px 51px -25px rgba(75,25,176,1);
 }
+/* end input radio box in add-game.html */
+
+
+
+
+/* start range slider.js */
 .rangeslider,
 input[type='range'] {
   max-width: 400px;
@@ -141,6 +149,26 @@ input[type='range'] {
   display: inline-block;
   width: 100%;
 }
+/* end range slider.js */
+
+  
+
+  /* sign out popup with library sweet alert */
+
+.swal-overlay {
+  background-color:rgba(173, 120,194,0.4);
+}
+.swal-button
+{
+  padding: 10px 20px;
+}
+.swal-footer {
+ 
+  display: flex;
+  justify-content: center;
+}
+  /*  end sign out popup with library sweet alert */
+
 
 
 
