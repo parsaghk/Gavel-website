@@ -64,8 +64,8 @@ html {
 .select-console:not(:checked) + label{
 	position: relative;
 	display: inline-block;
-	padding: 30px;
-	width: 220px;
+	padding: 10px 5px;
+	width: 150px;
 	font-size: 18px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -80,12 +80,12 @@ html {
 }
 .select-console:not(:checked) + label
 {
-  box-shadow: -33px 25px 51px -25px rgba(75,25,176,1);
-
+  border: 1px solid #8e24aa;
 }
 .select-console:checked + label{
-	background: linear-gradient(70deg, rgba(66,41,180,1) 0%, rgba(71,111,25,0.9) 16%, rgba(86,64,196,0.9) 54%, rgba(31,30,143,1) 100%);
-  box-shadow: -33px 25px 51px -25px rgba(75,25,176,1);
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  border: 1px solid #8e24aa;
+
 }
 
 .select-region
@@ -100,8 +100,8 @@ html {
 .select-region:not(:checked) + label{
 	position: relative;
 	display: inline-block;
-	padding: 30px;
-	width: 150px;
+	padding: 10px 5px;
+	width: 80px;
 	font-size: 18px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -116,12 +116,11 @@ html {
 }
 .select-region:not(:checked) + label
 {
-  box-shadow: -33px 25px 51px -25px rgba(75,25,176,1);
-
+  border: 1px solid #8e24aa;
 }
 .select-region:checked + label{
-	background: linear-gradient(70deg, rgba(66,41,180,1) 0%, rgba(71,111,25,0.9) 16%, rgba(86,64,196,0.9) 54%, rgba(31,30,143,1) 100%);
-  box-shadow: -33px 25px 51px -25px rgba(75,25,176,1);
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  border: 1px solid #8e24aa;
 }
 /* end input radio box in add-game.html */
 
@@ -167,10 +166,18 @@ input[type='range'] {
   display: flex;
   justify-content: center;
 }
-  /*  end sign out popup with library sweet alert */
-
-
-
+ 
+/*  end sign out popup with library sweet alert */
+.pagination-page
+{
+  display: flex;
+  justify-content: center;
+}
+.pagination-page a:hover:not(.active-page), .active-page
+{
+  color: white;
+  background-color: violet;
+}
 
 
 
@@ -1146,6 +1153,11 @@ pre code {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+  .select-console
+  {
+    display: flex;
+    flex-direction: column;
   }
 }
 
