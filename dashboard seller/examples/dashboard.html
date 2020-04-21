@@ -1061,18 +1061,38 @@
     <script>
       new WOW().init();
     </script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script>
-      function sweetAlert() {
-        swal("برای خروج از حساب کاربری اطمینان دارید؟", {
-          buttons: ["بله", "خیر"],
-          title: "خروج ازحساب",
-          icon: "warning"
-        });
 
-      }
+      setTimeout(function () {
+
+        Swal.fire({
+          title: 'درخواست های جدید شما',
+          icon: 'question',
+          text: 'شما ۵ درخواست جدید دارید.لطفا مراجعه کنید به صفحه وضعیت درخواست ها',
+          showCloseButton: true,
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText:
+            '<a href="./Request status.html" style="color:white"> رفتن به صفحه وضعیت درخواست</a> ',
+          confirmButtonAriaLabel: 'Thumbs up, great!',
+          cancelButtonText: 'لازم نیست',
+
+        })
+
+      }, 2000)
+
+
+
+        < script >
+        function sweetAlert() {
+          swal("برای خروج از حساب کاربری اطمینان دارید؟", {
+            buttons: ["بله", "خیر"],
+            title: "خروج ازحساب",
+            icon: "warning"
+          });
+
+        }
 
     </script>
 

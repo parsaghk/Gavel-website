@@ -787,41 +787,16 @@
 
 
 
-            <!-- 
-            <script>
-           
-                    setTimeout(function () {
-                        swal(" شما 5 پیام جدید دارید.وارد صفحه وضعیت درخواست ها شوید ", {
-                            buttons: ["صفحه وضعیت درخواست ها", "خیر"],
-                            title: "درخواست های جدید خریداران ",
-                            icon: "info"
-                        });
 
-                    }, 10000)
+            <!-- pop up -->
 
-
-            </script> -->
-            <script>
-
-
-                swal(" شما 5 پیام جدید دارید.وارد صفحه وضعیت درخواست ها شوید ", {
-                    buttons: ["صفحه وضعیت درخواست ها", "خیر"],
-                    title: "درخواست های جدید خریداران ",
-                    icon: "info"
-                });
-
-
+         
             </script>
+            <!-- click on accept btn -->
             <script>
 
                 function acceptBtn() {
 
-                    // swal(
-                    //     "از قبول این خرید با این قیمت پیشنهادی اطمینان دارید؟", {
-                    //     title: "چک کردن قیمت پیشنهادی",
-                    //     icon: "warning",
-
-                    // });
                     Swal.fire({
                         title: 'اطمینان از فروش',
                         text: 'ایا مطمئن هستید کالای خود را با این قیمت  می خواهید به فروش برسانید؟',
@@ -836,8 +811,7 @@
                                 '  در صورت تمایل خریدار به خرید کالا مبلغ طی 48 ساعت به حساب شما واریز خواهد شد و از طریق پیامک اطلاع رسانی خواهد شد',
                                 'success'
                             )
-                            // For more information about handling dismissals please visit
-                            // https://sweetalert2.github.io/#handling-dismissals
+
                         } else if (result.dismiss === Swal.DismissReason.cancel) {
                             Swal.fire(
                                 'لغو عملیات',
@@ -849,7 +823,7 @@
                 }
 
             </script>
-
+            <!-- click on decline btn -->
             <script>
                 function declineBtn() {
 
