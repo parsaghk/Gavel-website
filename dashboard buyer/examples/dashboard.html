@@ -156,6 +156,21 @@
               <p>رسیدهای مالی</p>
             </a>
           </li>
+          <li class="nav-item dropdown-item--sidebar" style="cursor: pointer;">
+            <a class="nav-link" style="width:100%">
+              <i class="material-icons">library_books</i>
+              <p> وضعیت درخواست</p>
+            </a>
+          </li>
+          <div class="dropped-itemes" style="display: none;" style="display: block;">
+            <li style="display: flex; align-items: center; padding-right: 20px;"><a href="
+              ./sendrequest.html" style="width:100%">درخواست
+                های ارسال شده</a></li>
+            <li style="display: flex; align-items: center; padding-right:20px ;"><a href="./acceptRequest.html"
+                style="width:100%">درخواست
+                های پذیرفته شده</a>
+            </li>
+          </div>
           <li class="nav-item ">
             <a class="nav-link" href="./MyMessage.html" style="display: flex; align-items: center;">
               <img src="../assets/img/message-24px.png" alt="" width="25px" height="25px">
@@ -290,7 +305,7 @@
                     <span class="material-icons">
                       add
                     </span>
-                    <a href="./Add-game.html" style="color: purple; cursor: pointer;">جزییات بازی های خریداری
+                    <a href="./Financial-receipts.html" style="color: purple; cursor: pointer;">جزییات بازی های خریداری
                       شده</a>
                   </div>
                 </div>
@@ -347,58 +362,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row">
-             <div class="col-md-4">
-               <div class="card card-chart">
-                 <div class="card-header card-header-success">
-                   <div class="ct-chart" id="dailySalesChart"></div>
-                 </div>
-                 <div class="card-body">
-                   <h4 class="card-title">فروش هفتگی</h4>
-                   <p class="card-category">
-                     <span class="text-success">
-                       <i class="fa fa-long-arrow-up"></i> ۳۳% </span> رشد در فروش امروز.</p>
-                 </div>
-                 <div class="card-footer">
-                   <div class="stats">
-                     <i class="material-icons">access_time</i> ۴ دقیقه پیش
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col-md-4">
-               <div class="card card-chart">
-                 <div class="card-header card-header-warning">
-                   <div class="ct-chart" id="websiteViewsChart"></div>
-                 </div>
-                 <div class="card-body">
-                   <h4 class="card-title">دنبال کننده‌های ایمیلی</h4>
-                   <p class="card-category">کارایی آخرین کمپین</p>
-                 </div>
-                 <div class="card-footer">
-                   <div class="stats">
-                     <i class="material-icons">access_time</i> کمپین دو روز پیش ارسال شد
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col-md-4">
-               <div class="card card-chart">
-                 <div class="card-header card-header-danger">
-                   <div class="ct-chart" id="completedTasksChart"></div>
-                 </div>
-                 <div class="card-body">
-                   <h4 class="card-title">وظایف انجام شده</h4>
-                   <p class="card-category">کارایی آخرین کمپین</p>
-                 </div>
-                 <div class="card-footer">
-                   <div class="stats">
-                     <i class="material-icons">access_time</i> کمپین دو روز پیش ارسال شد
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div> -->
+
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="card">
@@ -661,49 +625,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
-              <!-- <div class="card">
- 
-                 <div class="card-header card-header-warning" style="text-align: right;">
-                   <h4 class="card-title">درخواست جدید </h4>
-                   <p class="card-category"> قیمت های ارائه شده جدید در این قسمت قرار می گیرد </p>
-                 </div>
-                 <div class="card-body table-responsive">
-                   <table class="table table-hover">
-                     <thead class="text-warning">
-                       <th>کد</th>
-                       <th>نام</th>
-                       <th>قیمت پیشنهادی</th>
-                       <th>استان</th>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td>۱</td>
-                         <td>احمد حسینی</td>
-                         <td>۴۵۰,۰۰۰تومان</td>
-                         <td>مازندران</td>
-                       </tr>
-                       <tr>
-                         <td>۲</td>
-                         <td>مینا رضایی</td>
-                         <td>۴۵۰,۰۰۰تومان</td>
-                         <td>گلستان</td>
-                       </tr>
-                       <tr>
-                         <td>۳</td>
-                         <td>مبینا احمدپور</td>
-                         <td>۴۵۰,۰۰۰تومان</td>
-                         <td>تهران</td>
-                       </tr>
-                       <tr>
-                         <td>۴</td>
-                         <td>جلال آقایی</td>
-                         <td>۴۵۰,۰۰۰تومان</td>
-                         <td>شهرکرد</td>
-                       </tr>
-                     </tbody>
-                   </table>
-                 </div>
-               </div> -->
+
               <div class="card">
                 <div class="card-header card-header-warning" style="text-align: right;">
                   <h4 class="card-title"> بازی های پیشنهادی </h4>
@@ -792,25 +714,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-lg-6 col-md-12">
-                <div class="card card-profile">
-                  <div class="card-avatar">
-                    <a href="#pablo">
-                      <img class="img" src="../assets/img/faces/marc.jpg" />
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <h6 class="card-category text-gray">مدیرعامل / مدیرفنی</h6>
-                    <h4 class="card-title">خداداد عزیزی</h4>
-                    <p class="card-description">
-                      طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی
-                      طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن
-                      باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند ...
-                    </p>
-                    <a href="#pablo" class="btn btn-primary btn-round">دنبال‌کردن</a>
-                  </div>
-                </div>
-              </div> -->
+
         </div>
       </div>
       <footer class="footer">
@@ -1113,6 +1017,23 @@
       });
 
     }
+
+  </script>
+  <script>
+    var dropdownItemSidebar = document.getElementsByClassName("dropdown-item--sidebar");
+    var i;
+    for (i = 0; i < dropdownItemSidebar.length; i++) {
+      dropdownItemSidebar[i].addEventListener("click", function () {
+        this.classList.toggle("active-sidebar");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
 
   </script>
 
