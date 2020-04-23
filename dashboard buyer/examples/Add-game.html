@@ -56,21 +56,21 @@
     <link rel="stylesheet" href="../assets/css/animate.css">
     <!-- Google Tag Manager -->
     <!-- <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-  </script> -->
+     (function (w, d, s, l, i) {
+       w[l] = w[l] || [];
+       w[l].push({
+         'gtm.start': new Date().getTime(),
+         event: 'gtm.js'
+       });
+       var f = d.getElementsByTagName(s)[0],
+         j = d.createElement(s),
+         dl = l != 'dataLayer' ? '&l=' + l : '';
+       j.async = true;
+       j.src =
+         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+       f.parentNode.insertBefore(j, f);
+     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
+   </script> -->
     <!-- End Google Tag Manager -->
     <!-- Style Just for persian demo purpose, don't include it in your project -->
     <style>
@@ -103,11 +103,11 @@
         <div class="sidebar" data-color="purple" data-background-color="white"
             data-image="../assets/img/image-sidebar.jpg">
             <!--
-          Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-  
-          Tip 2: you can also add an image using data-image tag
-      -->
-            <div class=" logo wow slideInDown" data-wow-duration="2s" data-wow-delay="1s">
+           Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+   
+           Tip 2: you can also add an image using data-image tag
+       -->
+            <div class=" logo wow slideInDown" data-wow-duration="1s">
                 <a href="./dashboard.html" class="simple-text logo-normal">
                     سایت گاول
                 </a>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div class="sidebar-wrapper">
-                <ul class="wow slideInLeft nav" data-wow-duration="2s" data-wow-delay="1s">
+                <ul class="wow slideInLeft nav" data-wow-duration="1s">
                     <li class="nav-item ">
                         <a class="nav-link" href="./dashboard.html">
                             <i class="material-icons">dashboard</i>
@@ -141,9 +141,24 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="./Financial-receipts.html">
                             <i class="material-icons">library_books</i>
-                            <p>بازی های خریداری شده</p>
+                            <p>رسیدهای مالی</p>
                         </a>
                     </li>
+                    <li class="nav-item dropdown-item--sidebar" style="cursor: pointer;">
+                        <a class="nav-link" style="width:100%">
+                            <i class="material-icons">library_books</i>
+                            <p> وضعیت درخواست</p>
+                        </a>
+                    </li>
+                    <div class="dropped-itemes" style="display: none;" style="display: block;">
+                        <li style="display: flex; align-items: center; padding-right: 20px;"><a href="
+              ./sendrequest.html" style="width:100%">درخواست
+                                های ارسال شده</a></li>
+                        <li style="display: flex; align-items: center; padding-right:20px ;"><a
+                                href="./acceptRequest.html" style="width:100%">درخواست
+                                های پذیرفته شده</a>
+                        </li>
+                    </div>
                     <li class="nav-item ">
                         <a class="nav-link" href="./MyMessage.html" style="display: flex; align-items: center;">
                             <img src="../assets/img/message-24px.png" alt="" width="25px" height="25px">
@@ -162,7 +177,7 @@
                 </ul>
                 <ul class="social-network wow slideInUp"
                     style="list-style: none; display: flex;margin-top: 60px;padding-right: 24px; margin-bottom: 40px; "
-                    data-wow-duration="2s" data-wow-delay="1s">
+                    data-wow-duration="1s">
 
                     <li style="padding: 10px 0 10px 10px;">
                         <a href="#">
@@ -183,10 +198,10 @@
                 </ul>
             </div>
         </div>
-        <div class="main-panel">
+        <div class="main-panel wow rotateIn" data-wow-duration="1s">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top wow slideInRight"
-                data-wow-delay="1s" data-wow-duration="2s">
+                data-wow-duration="1s">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
                         <a class="navbar-brand" href="#pablo">داشبورد خریدار</a>
@@ -645,6 +660,23 @@
                         });
 
                     }
+
+                </script>
+                <script>
+                    var dropdownItemSidebar = document.getElementsByClassName("dropdown-item--sidebar");
+                    var i;
+                    for (i = 0; i < dropdownItemSidebar.length; i++) {
+                        dropdownItemSidebar[i].addEventListener("click", function () {
+                            this.classList.toggle("active-sidebar");
+                            var dropdownContent = this.nextElementSibling;
+                            if (dropdownContent.style.display === "block") {
+                                dropdownContent.style.display = "none";
+                            } else {
+                                dropdownContent.style.display = "block";
+                            }
+                        });
+                    }
+
 
                 </script>
 

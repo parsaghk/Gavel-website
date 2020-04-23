@@ -802,6 +802,23 @@
                 });
 
             </script>
+            <script>
+                var dropdownItemSidebar = document.getElementsByClassName("dropdown-item--sidebar");
+                var i;
+                for (i = 0; i < dropdownItemSidebar.length; i++) {
+                    dropdownItemSidebar[i].addEventListener("click", function () {
+                        this.classList.toggle("active-sidebar");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+
+
+            </script>
 
 </body>
 

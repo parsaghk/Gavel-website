@@ -183,6 +183,10 @@ input[type='range'] {
   background-color: violet;
 }
 
+.choise-btn a
+{
+  padding: 0 !important;
+}
 
 
 
@@ -346,7 +350,7 @@ pre,
 code,
 kbd,
 samp {
-  "IRANYekanRegular","IRANYekanThin","IRANYekanLight";
+   font-family: "IRANYekanRegular","IRANYekanThin","IRANYekanLight";
   font-size: 1em;
 }
 
@@ -19929,4 +19933,25 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+@media only screen and (max-width: 600px) {
+
+.ID , .ID p
+{
+  font-size: 2vw;
+}
+.table-responsive
+{
+  overflow-x:auto;
+  font-size: 2vw;
+  
+}
+.bg-gray div h5 ,.bg-gray div
+{
+  font-size: 3vw;
+ 
+}
+.bg-gray div{
+  padding: 0 !important;
+}
+}
 /*# sourceMappingURL=dashboard-free.css.map */
